@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoruba Dream Interpreter AI</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="panel">
+        <header>
+          <p class="eyebrow">Ori-guided reflections</p>
+          <h1>Yoruba Dream Interpreter AI</h1>
+          <p class="lede">
+            Share your dream and receive an interpretation inspired by Yoruba
+            spirituality, ancestral wisdom, and symbolic logic.
+          </p>
+        </header>
+        <form id="dream-form">
+          <label for="dream-input">Describe your dream</label>
+          <textarea
+            id="dream-input"
+            name="dream"
+            rows="6"
+            placeholder="Example: I was standing at a river bank while lightning danced across the sky..."
+            required
+          ></textarea>
+          <button type="submit" id="interpret-btn">Interpret dream</button>
+        </form>
+        <section id="result" class="result" aria-live="polite">
+          <p class="placeholder">Your interpretation will appear here.</p>
+        </section>
+      </section>
+    </main>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
